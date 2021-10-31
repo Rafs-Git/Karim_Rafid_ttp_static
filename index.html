@@ -27,7 +27,7 @@
       document.getElementById("clock").innerHTML = time; 
       let timer = setTimeout(function(){ currentTime() }, 1000);
       }
-    currentTime();
+      var intervalID = setInterval(currentTime(), 500);
     
     
   </script>
