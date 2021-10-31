@@ -26,8 +26,9 @@
       let time = hours + ":" + minutes + ":" + seconds;
       document.getElementById("clock").innerHTML = time; 
       let timer = setTimeout(function(){ currentTime() }, 1000);
+      setInterval(currentTime(), 1000);
       }
-      var intervalID = setInterval(currentTime(), 500);
+      currentTime();
     
     
   </script>
