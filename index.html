@@ -24,7 +24,7 @@
       seconds = (seconds < 10) ? "0" + seconds : seconds;
     
       let time = hours + ":" + minutes + ":" + seconds;
-      document.getElementById("currentTime").innerHTML = time; 
+      document.getElementById("clock").innerHTML = time; 
       let timer = setTimeout(function(){ currentTime() }, 1000);
       }
     currentTime();
