@@ -25,7 +25,7 @@
     
       let time = hours + ":" + minutes + ":" + seconds;
       document.getElementById("clock").innerHTML = time; 
-      setInterval(currentTime(), 1000);
+      var t = setTimeout(currentTime, 1000);
       }
       currentTime();
     
